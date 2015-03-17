@@ -14,6 +14,7 @@
 		1ADABF241AB8A665002F86C2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ADABF231AB8A665002F86C2 /* Images.xcassets */; };
 		1ADABF271AB8A665002F86C2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ADABF251AB8A665002F86C2 /* LaunchScreen.xib */; };
 		1ADABF331AB8A665002F86C2 /* Ejempo1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADABF321AB8A665002F86C2 /* Ejempo1Tests.m */; };
+		1ADABF3F1AB8BE0C002F86C2 /* HolasControlador.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADABF3E1AB8BE0C002F86C2 /* HolasControlador.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		1ADABF2C1AB8A665002F86C2 /* Ejempo1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ejempo1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ADABF311AB8A665002F86C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1ADABF321AB8A665002F86C2 /* Ejempo1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ejempo1Tests.m; sourceTree = "<group>"; };
+		1ADABF3D1AB8BE0C002F86C2 /* HolasControlador.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HolasControlador.h; sourceTree = "<group>"; };
+		1ADABF3E1AB8BE0C002F86C2 /* HolasControlador.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HolasControlador.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +86,10 @@
 			children = (
 				1ADABF1A1AB8A665002F86C2 /* AppDelegate.h */,
 				1ADABF1B1AB8A665002F86C2 /* AppDelegate.m */,
-				1ADABF1D1AB8A665002F86C2 /* ViewController.h */,
-				1ADABF1E1AB8A665002F86C2 /* ViewController.m */,
+				1ADABF3C1AB8B9F1002F86C2 /* ViewController */,
 				1ADABF201AB8A665002F86C2 /* Main.storyboard */,
+				1ADABF3D1AB8BE0C002F86C2 /* HolasControlador.h */,
+				1ADABF3E1AB8BE0C002F86C2 /* HolasControlador.m */,
 				1ADABF231AB8A665002F86C2 /* Images.xcassets */,
 				1ADABF251AB8A665002F86C2 /* LaunchScreen.xib */,
 				1ADABF161AB8A665002F86C2 /* Supporting Files */,
@@ -117,6 +121,15 @@
 				1ADABF311AB8A665002F86C2 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1ADABF3C1AB8B9F1002F86C2 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1ADABF1D1AB8A665002F86C2 /* ViewController.h */,
+				1ADABF1E1AB8A665002F86C2 /* ViewController.m */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +235,7 @@
 				1ADABF1F1AB8A665002F86C2 /* ViewController.m in Sources */,
 				1ADABF1C1AB8A665002F86C2 /* AppDelegate.m in Sources */,
 				1ADABF191AB8A665002F86C2 /* main.m in Sources */,
+				1ADABF3F1AB8BE0C002F86C2 /* HolasControlador.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
