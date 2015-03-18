@@ -8,7 +8,10 @@
 
 #import "HolasControlador.h"
 
-@interface HolasControlador ()
+@interface HolasControlador (){
+    int Valorentero;
+    float ValorFlotante;
+}
 
 @end
 
@@ -18,9 +21,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
    
-    
-    
-    NSLog(@"1");
+    Valorentero=[self Prueba: 23];
+    ValorFlotante=[self PruebaFlotante:0.23];
+    NSLog(@"%.02f",ValorFlotante);
     
     
     
@@ -37,6 +40,14 @@
 }
 -(int)hola{
     return 5;
+}
+-(int) Prueba:(int)entero{
+    return entero+5;
+
+
+}
+-(float)PruebaFlotante:(float)flotante{
+    return flotante+Valorentero;
 }
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -73,4 +84,15 @@
 }
 */
 
+- (IBAction)UiButton_Boton_Action:(UIButton *)sender {
+    Valorentero++;
+    ValorFlotante=[self PruebaFlotante:3];
+    self.UISlider_Slider.value=ValorFlotante;
+    self.UILabel_Label.text=[NSString stringWithFormat:@"%f0.02",ValorFlotante];
+    NSLog(@"%f",ValorFlotante);
+    
+}
+- (IBAction)UISlider_Slider_Action:(UISlider *)sender {
+    self.UILabel_Label.text=[NSString stringWithFormat:@"%f",self.UISlider_Slider.value];
+}
 @end
