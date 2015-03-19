@@ -11,6 +11,7 @@
 @interface HolasControlador (){
     int Valorentero;
     float ValorFlotante;
+    char Numero;
 }
 
 @end
