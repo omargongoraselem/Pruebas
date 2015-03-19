@@ -34,7 +34,9 @@
 - (IBAction)UIButton_Signo_Action:(UIButton *)sender;
 - (IBAction)UIButton_Borrar_Action:(UIButton *)sender;
 - (IBAction)UIButton_Igual_Action:(UIButton *)sender;
+
 @property (weak, nonatomic) IBOutlet UILabel *UILabel_Resultado;
+@property (weak, nonatomic) IBOutlet NSString *UControlador;
 
 
 
