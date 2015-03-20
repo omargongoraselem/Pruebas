@@ -426,6 +426,7 @@
 				1ADABF381AB8A665002F86C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1ADABF391AB8A665002F86C2 /* Build configuration list for PBXNativeTarget "Ejempo1Tests" */ = {
 			isa = XCConfigurationList;
@@ -434,6 +435,7 @@
 				1ADABF3B1AB8A665002F86C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
