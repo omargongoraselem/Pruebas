@@ -13,11 +13,27 @@
 
 @property (strong, nonatomic) IBOutlet UIButton *b;
 @property (strong, nonatomic) MBProgressHUD *Cargando;
+
 @property (strong, nonatomic) IBOutlet UISegmentedControl *Segmented_Control;
 - (IBAction)Segmented:(UISegmentedControl *)sender;
+
 @property (strong, nonatomic) IBOutlet UIView *UISegemented_Control;
 - (IBAction)UISegmentes_Control_Action:(UISegmentedControl *)sender;
+
 @property (weak, nonatomic) IBOutlet UILabel *Texto;
+- (IBAction)Segmented_Control_Prueba22:(UISegmentedControl *)sender;
+
+@property (strong, nonatomic) IBOutlet UISwitch * Switch;
+- (IBAction)Switch_Action:(UISegmentedControl *)sender;
+
+
+@property (strong,nonatomic) IBOutlet UISlider *Slider;
+-(IBAction)Slider_Action:(UISlider *)sender;
+
+@property (weak, nonatomic) IBOutlet UIImageView *gif;
+@property (weak, nonatomic) IBOutlet UIButton *UIButton_Stop;
+- (IBAction)UIButton_stop_action:(UIButton *)sender;
 
 @end
+
 
