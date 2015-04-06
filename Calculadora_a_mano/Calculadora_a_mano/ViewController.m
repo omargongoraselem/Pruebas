@@ -5,9 +5,7 @@
 //  Created by Rafael on 24/03/15.
 //  Copyright (c) 2015 Rafael. All rights reserved.
 //
-
 #import "ViewController.h"
-
 
 @interface ViewController ()
 {MBProgressHUD *hud;
@@ -20,7 +18,6 @@
  
 int i;
 }
-
 
 @end
 
@@ -50,14 +47,12 @@ int i;
     self.gif.animationDuration=3;
     self.gif.animationRepeatCount=3;
      [self.view addSubview:self.gif];
-   
     
     //Switch
     self.Switch=[[UISwitch alloc]initWithFrame:CGRectMake(215,95, 80, 20)];
     [self.Switch addTarget: self action:@selector(Switch_Action:) forControlEvents:UIControlEventValueChanged];
     [self.Switch setOn:false];
     [self.view addSubview:self.Switch];
-    
     
     //Slider:
     CGRect frame = CGRectMake(10, 75, 150, 20);
@@ -78,20 +73,15 @@ int i;
     Segmented_Control.frame = CGRectMake(10,30, 300, 30);
     
     [Segmented_Control addTarget:self action:@selector(UISegmentes_Control_Action:) forControlEvents: UIControlEventValueChanged];
-    
-    
 
     [self.view addSubview:Segmented_Control];
    
- 
-    
     //Boton
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [button addTarget:self
                action:@selector(Boton_1:)
      forControlEvents:UIControlEventTouchUpInside];
-    
     
     //[button setTitle:@"Boton_1" forState:UIControlStateNormal];
     button.tintColor=[UIColor orangeColor];
@@ -108,7 +98,6 @@ int i;
       Prueba.backgroundColor=[UIColor redColor];
     [self.view addSubview:Prueba];
     [self.view bringSubviewToFront:self.Texto];
-  
     }
 
 -(void)Boton_1:(UIButton*)sender{
@@ -128,10 +117,7 @@ int i;
     hud.square=YES;
     hud.progress=.1;
     i=0;
-    
-
-    
-};
+    };
 -(void)salir:(MBProgressHUD*)hub{
     [NSTimer scheduledTimerWithTimeInterval:1.0
                                      target:self
@@ -151,12 +137,11 @@ int i;
         [hud hide:YES];
         hide=1;
     }
-
-
 }
+
+
 -(void)myMethod2{
   [hud hide:YES];
-   
 }
 
 - (void)didReceiveMemoryWarning {
@@ -165,17 +150,12 @@ int i;
 }
 
 - (IBAction)Segmented:(UISegmentedControl *)sender {
-    
-        
         if (sender.selectedSegmentIndex == 0) {
-            
         }
         else
         {
         }
 }
-    
-
 
 - (IBAction)UISegmentes_Control_Action:(UISegmentedControl *)sender {
     
