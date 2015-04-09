@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "MBProgressHUD.h"
+#import "Tableviewcell.h"
+#import "Vista2.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource,DelegateCelda>
 
 @property (strong, nonatomic) IBOutlet UIButton *b;
 @property (strong, nonatomic) MBProgressHUD *Cargando;
@@ -25,6 +27,11 @@
 
 @property (strong, nonatomic) IBOutlet UISwitch * Switch;
 - (IBAction)Switch_Action:(UISegmentedControl *)sender;
+
+@property (weak, nonatomic) IBOutlet UITableView *UITableView_Tabla;
+
+@property (weak, nonatomic) IBOutlet UIButton *UiButton_Go;
+- (IBAction)UIButton_action_view:(UIButton *)sender;
 
 
 @property (strong,nonatomic) IBOutlet UISlider *Slider;
