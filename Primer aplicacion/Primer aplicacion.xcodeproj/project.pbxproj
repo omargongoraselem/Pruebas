@@ -14,6 +14,9 @@
 		027A3DD41AD6DBDC006C8142 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 027A3DD31AD6DBDC006C8142 /* Images.xcassets */; };
 		027A3DD71AD6DBDC006C8142 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 027A3DD51AD6DBDC006C8142 /* LaunchScreen.xib */; };
 		027A3DE31AD6DBDD006C8142 /* Primer_aplicacionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 027A3DE21AD6DBDD006C8142 /* Primer_aplicacionTests.m */; };
+		027A3DEE1AD70176006C8142 /* Vista Inicio.m in Sources */ = {isa = PBXBuildFile; fileRef = 027A3DED1AD70176006C8142 /* Vista Inicio.m */; };
+		027A3DF11AD70F8A006C8142 /* ComfirmacionCompra.m in Sources */ = {isa = PBXBuildFile; fileRef = 027A3DF01AD70F8A006C8142 /* ComfirmacionCompra.m */; };
+		027A3DF41AD71057006C8142 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 027A3DF31AD71057006C8142 /* TableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		027A3DDC1AD6DBDD006C8142 /* Primer aplicacionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Primer aplicacionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		027A3DE11AD6DBDD006C8142 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		027A3DE21AD6DBDD006C8142 /* Primer_aplicacionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Primer_aplicacionTests.m; sourceTree = "<group>"; };
+		027A3DEC1AD70176006C8142 /* Vista Inicio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Vista Inicio.h"; sourceTree = "<group>"; };
+		027A3DED1AD70176006C8142 /* Vista Inicio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Vista Inicio.m"; sourceTree = "<group>"; };
+		027A3DEF1AD70F8A006C8142 /* ComfirmacionCompra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComfirmacionCompra.h; sourceTree = "<group>"; };
+		027A3DF01AD70F8A006C8142 /* ComfirmacionCompra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComfirmacionCompra.m; sourceTree = "<group>"; };
+		027A3DF21AD71057006C8142 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		027A3DF31AD71057006C8142 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,10 +91,16 @@
 			isa = PBXGroup;
 			children = (
 				027A3DCA1AD6DBDC006C8142 /* AppDelegate.h */,
+				027A3DEF1AD70F8A006C8142 /* ComfirmacionCompra.h */,
+				027A3DF01AD70F8A006C8142 /* ComfirmacionCompra.m */,
 				027A3DCB1AD6DBDC006C8142 /* AppDelegate.m */,
 				027A3DCD1AD6DBDC006C8142 /* ViewController.h */,
 				027A3DCE1AD6DBDC006C8142 /* ViewController.m */,
 				027A3DD01AD6DBDC006C8142 /* Main.storyboard */,
+				027A3DEC1AD70176006C8142 /* Vista Inicio.h */,
+				027A3DF21AD71057006C8142 /* TableViewCell.h */,
+				027A3DF31AD71057006C8142 /* TableViewCell.m */,
+				027A3DED1AD70176006C8142 /* Vista Inicio.m */,
 				027A3DD31AD6DBDC006C8142 /* Images.xcassets */,
 				027A3DD51AD6DBDC006C8142 /* LaunchScreen.xib */,
 				027A3DC61AD6DBDC006C8142 /* Supporting Files */,
@@ -220,8 +235,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				027A3DCF1AD6DBDC006C8142 /* ViewController.m in Sources */,
+				027A3DF41AD71057006C8142 /* TableViewCell.m in Sources */,
 				027A3DCC1AD6DBDC006C8142 /* AppDelegate.m in Sources */,
+				027A3DF11AD70F8A006C8142 /* ComfirmacionCompra.m in Sources */,
 				027A3DC91AD6DBDC006C8142 /* main.m in Sources */,
+				027A3DEE1AD70176006C8142 /* Vista Inicio.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +363,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "Primer aplicacion/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -355,7 +375,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "Primer aplicacion/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

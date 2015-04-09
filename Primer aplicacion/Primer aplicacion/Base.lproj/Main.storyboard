@@ -1,13 +1,73 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="mhd-RL-pg8">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
+        <!--Vista Inicio-->
+        <scene sceneID="Iyf-XO-Czl">
+            <objects>
+                <viewController id="ul4-1D-LIl" customClass="Vista_Inicio" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Q2M-Yr-iJv"/>
+                        <viewControllerLayoutGuide type="bottom" id="zIo-3w-ia8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="P8J-zQ-jzf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="siG-sq-phc">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="600"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0Z-CM-oeL">
+                                        <rect key="frame" x="101" y="353" width="100" height="50"/>
+                                        <color key="backgroundColor" red="0.80583254440868934" green="0.96732824438750142" blue="0.57655919105395614" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" red="0.0" green="0.0053935408960000004" blue="0.011304450759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="UIButton_action_Login:" destination="ul4-1D-LIl" eventType="touchUpInside" id="nQt-sj-u2h"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gg-Yb-t9w">
+                                        <rect key="frame" x="101" y="450" width="100" height="50"/>
+                                        <color key="backgroundColor" red="0.8637167864613009" green="0.96732824438750142" blue="0.60730119529685933" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Registro">
+                                            <color key="titleColor" red="0.0" green="0.0053935408960000004" blue="0.011304450759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="UIButton_action_Registro:" destination="ul4-1D-LIl" eventType="touchUpInside" id="TE0-pB-tvA"/>
+                                            <segue destination="BYZ-38-t0r" kind="presentation" modalTransitionStyle="flipHorizontal" id="Dn8-xr-adx"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L7q-Zc-8JV">
+                                        <rect key="frame" x="0.0" y="74" width="320" height="155"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="UIButton_Login" destination="o0Z-CM-oeL" id="wF3-qp-LWg"/>
+                        <outlet property="UIButton_Registro" destination="8gg-Yb-t9w" id="jIZ-Rl-7je"/>
+                        <outlet property="UIImageview_Bienvenida" destination="L7q-Zc-8JV" id="bj8-Ev-Ka9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w2L-Tm-Dft" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-465" y="261"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +75,197 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2oV-KS-wb4">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="580"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jaR-MX-a6O">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="580"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="UIButton_action_CierraTeclado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lbQ-qW-3wZ"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="NOMBRE" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="5AB-fw-4od">
+                                        <rect key="frame" x="95" y="200" width="130" height="30"/>
+                                        <color key="tintColor" red="0.0" green="0.0053935408960000004" blue="0.011304450759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="COMIDA" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NgU-4h-mlg">
+                                        <rect key="frame" x="95" y="265" width="130" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="BEBIDA" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rdt-hK-pwh">
+                                        <rect key="frame" x="95" y="330" width="130" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GfR-Mc-e11">
+                                        <rect key="frame" x="45" y="419" width="90" height="35"/>
+                                        <color key="backgroundColor" red="0.33274000510000001" green="1" blue="0.087695836560000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="ACEPTAR">
+                                            <color key="titleColor" red="0.0" green="0.0053935408960000004" blue="0.011304450759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="UIButton_action_aceptar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yu7-Z1-z3k"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PX8-Ku-6Gk">
+                                        <rect key="frame" x="196" y="419" width="90" height="35"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.060231345870000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="CANCELAR">
+                                            <color key="titleColor" red="0.0" green="0.0053935408960000004" blue="0.011304450759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="UIButton_action_Cancelar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GFX-42-eWv"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xDF-zY-0uc">
+                                        <rect key="frame" x="20" y="30" width="120" height="130"/>
+                                        <color key="backgroundColor" white="0.74056846217105265" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" white="0.74056846220000005" alpha="1" colorSpace="calibratedWhite"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W7M-8X-e3v">
+                                        <rect key="frame" x="170" y="30" width="85" height="30"/>
+                                        <color key="backgroundColor" red="0.23750900912056161" green="0.93201171678040984" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Hombre">
+                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="UIButton_action_Hombre:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gkA-oz-AXQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Clz-og-Mb3">
+                                        <rect key="frame" x="170" y="80" width="85" height="30"/>
+                                        <color key="backgroundColor" red="0.2375090091" green="0.93201171679999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Mujer">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="UIButton_action_Mujer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uIw-hA-1TN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNO-SP-qzd">
+                                        <rect key="frame" x="170" y="130" width="85" height="30"/>
+                                        <color key="backgroundColor" red="0.16300516819999999" green="0.94246607459999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Indef.">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="UIButton_action_indef:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WpO-AE-uh7"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Faltan Datos!!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwv-sV-iaC">
+                                        <rect key="frame" x="72" y="469" width="188" height="22"/>
+                                        <color key="backgroundColor" red="0.96732824438750142" green="0.96666136948435877" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="highlightedColor" red="0.97099168059999996" green="1" blue="0.050937201109999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="UIButton_Cancelar" destination="PX8-Ku-6Gk" id="Pir-DK-RmD"/>
+                        <outlet property="UIButton_CierraTeclado" destination="jaR-MX-a6O" id="Uid-A7-A9W"/>
+                        <outlet property="UIButton_Hombre" destination="W7M-8X-e3v" id="sST-b8-Q8x"/>
+                        <outlet property="UIButton_Indef" destination="FNO-SP-qzd" id="4qE-1N-ooZ"/>
+                        <outlet property="UIButton_Mujer" destination="Clz-og-Mb3" id="8JC-8Q-3Q8"/>
+                        <outlet property="UIButton_aceptar" destination="GfR-Mc-e11" id="RMI-gu-bql"/>
+                        <outlet property="UIImage_FotoPerfil" destination="xDF-zY-0uc" id="U5K-zg-x16"/>
+                        <outlet property="UILabel_Alerta" destination="dwv-sV-iaC" id="oYY-Bw-oQ8"/>
+                        <outlet property="UILabel_Bebida" destination="rdt-hK-pwh" id="ebF-ip-mE1"/>
+                        <outlet property="UILabel_Comida" destination="NgU-4h-mlg" id="OAw-at-6av"/>
+                        <outlet property="UILabel_Nombre" destination="5AB-fw-4od" id="GDq-32-GlB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="429" y="-133"/>
+        </scene>
+        <!--Comfirmacion Compra-->
+        <scene sceneID="r9H-5W-e5k">
+            <objects>
+                <viewController id="mhd-RL-pg8" customClass="ComfirmacionCompra" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ks3-ip-X9d"/>
+                        <viewControllerLayoutGuide type="bottom" id="dlq-y2-qlg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZKA-D2-a8P">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="od1-k7-DTf">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="600"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="8WV-Re-j3s">
+                                        <rect key="frame" x="50" y="100" width="220" height="350"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <prototypes>
+                                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Celda1" id="8Zv-P9-lNc" customClass="TableViewCell">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8Zv-P9-lNc" id="zCj-na-EKi">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGo-S9-iZg">
+                                                            <rect key="frame" x="27" y="11" width="141" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="UILabel_Celda" destination="UGo-S9-iZg" id="8v1-aD-rcu"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybO-yR-BB9">
+                                        <rect key="frame" x="95" y="491" width="130" height="40"/>
+                                        <color key="backgroundColor" red="0.031758292388082497" green="0.73340700070063281" blue="0.056418331423794654" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <state key="normal" title="ACEPTAR">
+                                            <color key="titleColor" red="0.0" green="0.0053935408960000004" blue="0.011304450759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="UIButton_action_AceptarCompra:" destination="mhd-RL-pg8" eventType="touchUpInside" id="UwC-Ra-kU0"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pedido" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TpV-wR-UHf">
+                                        <rect key="frame" x="101" y="33" width="118" height="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="UIButton_AceptarCompta" destination="ybO-yR-BB9" id="jgi-tv-qeS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jj6-Yl-PQy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="481" y="641"/>
         </scene>
     </scenes>
 </document>

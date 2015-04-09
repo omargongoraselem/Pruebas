@@ -9,6 +9,25 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *UIButton_CierraTeclado;
+- (IBAction)UIButton_action_CierraTeclado:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UILabel *UILabel_Alerta;
+
+
+@property (weak, nonatomic) IBOutlet UIImageView *UIImage_FotoPerfil;
+@property (weak, nonatomic) IBOutlet UIButton *UIButton_Hombre;
+- (IBAction)UIButton_action_Hombre:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UIButton *UIButton_Mujer;
+- (IBAction)UIButton_action_Mujer:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UIButton *UIButton_Indef;
+- (IBAction)UIButton_action_indef:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UIButton *UIButton_aceptar;
+- (IBAction)UIButton_action_aceptar:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UIButton *UIButton_Cancelar;
+- (IBAction)UIButton_action_Cancelar:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UITextField *UILabel_Nombre;
+@property (weak, nonatomic) IBOutlet UITextField *UILabel_Comida;
+@property (weak, nonatomic) IBOutlet UITextField *UILabel_Bebida;
 
 
 @end
