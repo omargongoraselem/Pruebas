@@ -19,7 +19,6 @@
     }
 
 @property id<DelegateCelda> Modicar_delegate;
-
 @property (weak, nonatomic) IBOutlet UILabel *Label1;
 @property (weak, nonatomic) IBOutlet UILabel *Label2;
 @property (weak, nonatomic) IBOutlet UIButton *UIButton_Perro;

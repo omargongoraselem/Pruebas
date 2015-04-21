@@ -7,8 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ViewController.h"
+#import "ComfirmacionCompra.h"
 
-@interface Vista_Inicio : UIViewController
+
+
+
+@interface Vista_Inicio : UIViewController <DelegateCelda >{
+    
+    
+}
+
+
+
 @property (weak, nonatomic) IBOutlet UIImageView *UIImageview_Bienvenida;
 @property (weak, nonatomic) IBOutlet UIButton *UIButton_Login;
 - (IBAction)UIButton_action_Login:(UIButton *)sender;

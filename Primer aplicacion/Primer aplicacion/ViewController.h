@@ -8,7 +8,23 @@
 
 #import <UIKit/UIKit.h>
 
+#import "ComfirmacionCompra.h"
+
+@protocol DelegateCelda <NSObject>
+
+-(void) MandarDatos:(NSDictionary*)Data;
+
+@end
+
+
+
+
+
 @interface ViewController : UIViewController
+
+@property id<DelegateCelda> Modicar_delegate;
+
+
 @property (weak, nonatomic) IBOutlet UIButton *UIButton_CierraTeclado;
 - (IBAction)UIButton_action_CierraTeclado:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UILabel *UILabel_Alerta;

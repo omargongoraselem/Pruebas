@@ -8,9 +8,18 @@
 
 #import <UIKit/UIKit.h>
 #import "TableViewCell.h"
+#import "ViewController.h"
 
-@interface ComfirmacionCompra : UIViewController
-@property (weak, nonatomic) IBOutlet UIButton *UIButton_AceptarCompta;
+
+
+
+
+@interface ComfirmacionCompra : UIViewController <UITableViewDelegate, UITableViewDataSource>
+
+
+@property(strong, nonatomic)  NSArray *data;
+@property (strong, nonatomic) IBOutlet UIButton *UIButton_AceptarCompta;
 - (IBAction)UIButton_action_AceptarCompra:(UIButton *)sender;
+
 
 @end

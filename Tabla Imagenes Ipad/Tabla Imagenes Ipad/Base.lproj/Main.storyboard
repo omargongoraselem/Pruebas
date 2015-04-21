@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Vista2-->
+        <scene sceneID="Uek-NS-9ic">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" id="I02-fm-XFP" customClass="Vista2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="H1k-bH-rPw"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lwa-KY-ksz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0ka-ba-pEs">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WQr-0k-xaU">
+                                <rect key="frame" x="-8" y="0.0" width="784" height="1024"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cT-I6-LcZ">
+                                <rect key="frame" x="32" y="32" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.040183829109999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="079-lJ-Ccq"/>
+                                    <constraint firstAttribute="width" constant="46" id="rV3-wb-M6h"/>
+                                </constraints>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.0" green="0.0053935408960000004" blue="0.011304450759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="UIButton_Action_Back:" destination="I02-fm-XFP" eventType="touchUpInside" id="qBl-JH-2TU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5cT-I6-LcZ" firstAttribute="top" secondItem="H1k-bH-rPw" secondAttribute="bottom" constant="32" id="6Zd-0C-Y1c"/>
+                            <constraint firstItem="WQr-0k-xaU" firstAttribute="leading" secondItem="0ka-ba-pEs" secondAttribute="leadingMargin" constant="-24" id="NUB-ZP-Z7o"/>
+                            <constraint firstItem="WQr-0k-xaU" firstAttribute="top" secondItem="H1k-bH-rPw" secondAttribute="bottom" id="RgV-wf-mPJ"/>
+                            <constraint firstItem="5cT-I6-LcZ" firstAttribute="leading" secondItem="0ka-ba-pEs" secondAttribute="leadingMargin" constant="16" id="Sch-2p-eJo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WQr-0k-xaU" secondAttribute="trailing" constant="-24" id="k4b-9B-HIm"/>
+                            <constraint firstItem="Lwa-KY-ksz" firstAttribute="top" secondItem="WQr-0k-xaU" secondAttribute="bottom" id="zPt-Ha-4PX"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="768" height="1024"/>
+                    <connections>
+                        <outlet property="UIImagen_Vista2" destination="WQr-0k-xaU" id="U2v-aC-fOA"/>
+                        <outlet property="UILabel_Back" destination="5cT-I6-LcZ" id="7zw-GB-QTD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ONp-jB-gxl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1618" y="353"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gallery-13_3d-my-ipad-mini-wallpaper-hd-3d-48-" translatesAutoresizingMaskIntoConstraints="NO" id="NlG-Gy-xZb">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="122" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="rI9-Dk-OWT">
+                                <rect key="frame" x="242" y="175" width="323" height="610"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Celda1" rowHeight="120" id="jng-wt-cn3" customClass="TableViewCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="573" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jng-wt-cn3" id="NSv-Da-Mbk">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0LD-rd-nyC">
+                                                    <rect key="frame" x="109" y="33" width="197" height="53"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kaj-2R-COq">
+                                                    <rect key="frame" x="8" y="3" width="93" height="113"/>
+                                                    <accessibility key="accessibilityConfiguration">
+                                                        <accessibilityTraits key="traits" none="YES" image="YES" playsSound="YES"/>
+                                                    </accessibility>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="UIImage_Foto" destination="Kaj-2R-COq" id="DuT-W1-GIL"/>
+                                            <outlet property="UILabel_Nombre" destination="0LD-rd-nyC" id="IXl-ce-g9K"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="OMm-b7-O57"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="tX6-Bx-FGa"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="768" height="1024"/>
+                    <connections>
+                        <segue destination="I02-fm-XFP" kind="presentation" identifier="IraVista2" modalPresentationStyle="formSheet" modalTransitionStyle="crossDissolve" id="qGe-yx-JVy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="620" y="361"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gallery-13_3d-my-ipad-mini-wallpaper-hd-3d-48-" width="512" height="512"/>
+    </resources>
+</document>

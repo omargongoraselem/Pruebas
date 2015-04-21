@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02B57F0D1AE0124A000D956E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B57F0C1AE0124A000D956E /* main.m */; };
+		02B57F101AE0124A000D956E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B57F0F1AE0124A000D956E /* AppDelegate.m */; };
+		02B57F131AE0124A000D956E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B57F121AE0124A000D956E /* ViewController.m */; };
+		02B57F161AE0124A000D956E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02B57F141AE0124A000D956E /* Main.storyboard */; };
+		02B57F181AE0124A000D956E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02B57F171AE0124A000D956E /* Images.xcassets */; };
+		02B57F1B1AE0124A000D956E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02B57F191AE0124A000D956E /* LaunchScreen.xib */; };
+		02B57F271AE0124A000D956E /* Tabla_Imagenes_IpadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B57F261AE0124A000D956E /* Tabla_Imagenes_IpadTests.m */; };
+		02B57F321AE01A7E000D956E /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B57F311AE01A7E000D956E /* TableViewCell.m */; };
+		02B57F351AE029D5000D956E /* Vista2.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B57F341AE029D5000D956E /* Vista2.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		02B57F211AE0124A000D956E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02B57EFF1AE0124A000D956E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02B57F061AE0124A000D956E;
+			remoteInfo = "Tabla Imagenes Ipad";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02B57F071AE0124A000D956E /* Tabla Imagenes Ipad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tabla Imagenes Ipad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02B57F0B1AE0124A000D956E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02B57F0C1AE0124A000D956E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		02B57F0E1AE0124A000D956E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		02B57F0F1AE0124A000D956E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		02B57F111AE0124A000D956E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		02B57F121AE0124A000D956E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		02B57F151AE0124A000D956E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		02B57F171AE0124A000D956E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		02B57F1A1AE0124A000D956E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		02B57F201AE0124A000D956E /* Tabla Imagenes IpadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tabla Imagenes IpadTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02B57F251AE0124A000D956E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02B57F261AE0124A000D956E /* Tabla_Imagenes_IpadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tabla_Imagenes_IpadTests.m; sourceTree = "<group>"; };
+		02B57F301AE01A7E000D956E /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		02B57F311AE01A7E000D956E /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		02B57F331AE029D5000D956E /* Vista2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vista2.h; sourceTree = "<group>"; };
+		02B57F341AE029D5000D956E /* Vista2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vista2.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02B57F041AE0124A000D956E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02B57F1D1AE0124A000D956E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02B57EFE1AE0124A000D956E = {
+			isa = PBXGroup;
+			children = (
+				02B57F091AE0124A000D956E /* Tabla Imagenes Ipad */,
+				02B57F231AE0124A000D956E /* Tabla Imagenes IpadTests */,
+				02B57F081AE0124A000D956E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		02B57F081AE0124A000D956E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02B57F071AE0124A000D956E /* Tabla Imagenes Ipad.app */,
+				02B57F201AE0124A000D956E /* Tabla Imagenes IpadTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		02B57F091AE0124A000D956E /* Tabla Imagenes Ipad */ = {
+			isa = PBXGroup;
+			children = (
+				02B57F0E1AE0124A000D956E /* AppDelegate.h */,
+				02B57F0F1AE0124A000D956E /* AppDelegate.m */,
+				02B57F111AE0124A000D956E /* ViewController.h */,
+				02B57F121AE0124A000D956E /* ViewController.m */,
+				02B57F301AE01A7E000D956E /* TableViewCell.h */,
+				02B57F311AE01A7E000D956E /* TableViewCell.m */,
+				02B57F141AE0124A000D956E /* Main.storyboard */,
+				02B57F331AE029D5000D956E /* Vista2.h */,
+				02B57F341AE029D5000D956E /* Vista2.m */,
+				02B57F171AE0124A000D956E /* Images.xcassets */,
+				02B57F191AE0124A000D956E /* LaunchScreen.xib */,
+				02B57F0A1AE0124A000D956E /* Supporting Files */,
+			);
+			path = "Tabla Imagenes Ipad";
+			sourceTree = "<group>";
+		};
+		02B57F0A1AE0124A000D956E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				02B57F0B1AE0124A000D956E /* Info.plist */,
+				02B57F0C1AE0124A000D956E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		02B57F231AE0124A000D956E /* Tabla Imagenes IpadTests */ = {
+			isa = PBXGroup;
+			children = (
+				02B57F261AE0124A000D956E /* Tabla_Imagenes_IpadTests.m */,
+				02B57F241AE0124A000D956E /* Supporting Files */,
+			);
+			path = "Tabla Imagenes IpadTests";
+			sourceTree = "<group>";
+		};
+		02B57F241AE0124A000D956E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				02B57F251AE0124A000D956E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		02B57F061AE0124A000D956E /* Tabla Imagenes Ipad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02B57F2A1AE0124A000D956E /* Build configuration list for PBXNativeTarget "Tabla Imagenes Ipad" */;
+			buildPhases = (
+				02B57F031AE0124A000D956E /* Sources */,
+				02B57F041AE0124A000D956E /* Frameworks */,
+				02B57F051AE0124A000D956E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tabla Imagenes Ipad";
+			productName = "Tabla Imagenes Ipad";
+			productReference = 02B57F071AE0124A000D956E /* Tabla Imagenes Ipad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		02B57F1F1AE0124A000D956E /* Tabla Imagenes IpadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02B57F2D1AE0124A000D956E /* Build configuration list for PBXNativeTarget "Tabla Imagenes IpadTests" */;
+			buildPhases = (
+				02B57F1C1AE0124A000D956E /* Sources */,
+				02B57F1D1AE0124A000D956E /* Frameworks */,
+				02B57F1E1AE0124A000D956E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02B57F221AE0124A000D956E /* PBXTargetDependency */,
+			);
+			name = "Tabla Imagenes IpadTests";
+			productName = "Tabla Imagenes IpadTests";
+			productReference = 02B57F201AE0124A000D956E /* Tabla Imagenes IpadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		02B57EFF1AE0124A000D956E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = Rafael;
+				TargetAttributes = {
+					02B57F061AE0124A000D956E = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 6Q625QAZW8;
+					};
+					02B57F1F1AE0124A000D956E = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 02B57F061AE0124A000D956E;
+					};
+				};
+			};
+			buildConfigurationList = 02B57F021AE0124A000D956E /* Build configuration list for PBXProject "Tabla Imagenes Ipad" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 02B57EFE1AE0124A000D956E;
+			productRefGroup = 02B57F081AE0124A000D956E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				02B57F061AE0124A000D956E /* Tabla Imagenes Ipad */,
+				02B57F1F1AE0124A000D956E /* Tabla Imagenes IpadTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		02B57F051AE0124A000D956E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02B57F161AE0124A000D956E /* Main.storyboard in Resources */,
+				02B57F1B1AE0124A000D956E /* LaunchScreen.xib in Resources */,
+				02B57F181AE0124A000D956E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02B57F1E1AE0124A000D956E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02B57F031AE0124A000D956E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02B57F131AE0124A000D956E /* ViewController.m in Sources */,
+				02B57F321AE01A7E000D956E /* TableViewCell.m in Sources */,
+				02B57F101AE0124A000D956E /* AppDelegate.m in Sources */,
+				02B57F351AE029D5000D956E /* Vista2.m in Sources */,
+				02B57F0D1AE0124A000D956E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02B57F1C1AE0124A000D956E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02B57F271AE0124A000D956E /* Tabla_Imagenes_IpadTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02B57F221AE0124A000D956E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02B57F061AE0124A000D956E /* Tabla Imagenes Ipad */;
+			targetProxy = 02B57F211AE0124A000D956E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		02B57F141AE0124A000D956E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02B57F151AE0124A000D956E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		02B57F191AE0124A000D956E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02B57F1A1AE0124A000D956E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		02B57F281AE0124A000D956E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		02B57F291AE0124A000D956E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		02B57F2B1AE0124A000D956E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Tabla Imagenes Ipad/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		02B57F2C1AE0124A000D956E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Tabla Imagenes Ipad/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		02B57F2E1AE0124A000D956E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tabla Imagenes IpadTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tabla Imagenes Ipad.app/Tabla Imagenes Ipad";
+			};
+			name = Debug;
+		};
+		02B57F2F1AE0124A000D956E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tabla Imagenes IpadTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tabla Imagenes Ipad.app/Tabla Imagenes Ipad";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02B57F021AE0124A000D956E /* Build configuration list for PBXProject "Tabla Imagenes Ipad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02B57F281AE0124A000D956E /* Debug */,
+				02B57F291AE0124A000D956E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02B57F2A1AE0124A000D956E /* Build configuration list for PBXNativeTarget "Tabla Imagenes Ipad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02B57F2B1AE0124A000D956E /* Debug */,
+				02B57F2C1AE0124A000D956E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		02B57F2D1AE0124A000D956E /* Build configuration list for PBXNativeTarget "Tabla Imagenes IpadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02B57F2E1AE0124A000D956E /* Debug */,
+				02B57F2F1AE0124A000D956E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 02B57EFF1AE0124A000D956E /* Project object */;
+}

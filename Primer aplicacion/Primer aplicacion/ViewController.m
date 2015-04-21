@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+@import UIKit;
+
 @interface ViewController (){
     
     
@@ -21,6 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     Dictionary_Datos=[[NSMutableDictionary alloc]init];
 
 ////botones imagen///
@@ -124,9 +127,14 @@
         [Dictionary_Datos setObject:[NSString stringWithFormat:@"%@", self.UILabel_Bebida.text] forKey:@"Bebida"];
         [Dictionary_Datos setObject:[NSString stringWithFormat:@"%@", self.UILabel_Comida.text] forKey:@"Comida"];
         [Dictionary_Datos setObject:[NSString stringWithFormat:@"%@", self.UILabel_Nombre.text] forKey:@"Nombre"];
+         [Dictionary_Datos setObject:[NSString stringWithFormat:@"%@", Imagen] forKey:@"NombreImagen"];
         [self.UILabel_Bebida  setBackgroundColor:[UIColor whiteColor] ];
         [self.UILabel_Comida  setBackgroundColor:[UIColor whiteColor] ];
         [self.UILabel_Nombre  setBackgroundColor:[UIColor whiteColor] ];
+
+        [self.Modicar_delegate MandarDatos:Dictionary_Datos];
+        
+       [self dismissViewControllerAnimated:YES completion:nil];
     }
     
     NSLog(@"%@",[Dictionary_Datos valueForKey:@"Nombre"]);
@@ -135,6 +143,11 @@
     
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
+
+
+
+
 
 ///FADE///
 -(void)Fade:(int)Alpha  {
@@ -145,4 +158,11 @@
     }];
     
 }
+
+
+
+    
+
+    
+
 @end
